@@ -51,6 +51,8 @@ namespace nepesseg
             //4.feladat
             Console.WriteLine("4.Feladat");
 
+            suruseg("Kína", adatok);
+
             for (int i = 0; i < adatok.Count; i++)
             {
                 if (adatok[i].orszag == "Kína")
@@ -58,6 +60,7 @@ namespace nepesseg
                     Console.WriteLine("Kína népsűrűssége: {0} fő/km^2",int.Parse(adatok[i].nepesseg) / adatok[i].terulet);
                 }
             }
+
             Console.WriteLine();
             //5.feladat
             Console.WriteLine("5.Feladat");
@@ -97,6 +100,9 @@ namespace nepesseg
 
 
             Console.ReadLine();
+        }
+        static void suruseg(string sor, List<Orszag> adatok)
+        {
         }
     }
 }

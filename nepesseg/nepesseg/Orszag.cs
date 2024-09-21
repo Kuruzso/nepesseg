@@ -23,5 +23,21 @@ namespace nepesseg
             this.fovaros = darabok[3];
             this.fovaros_nepessege = Convert.ToInt32(darabok[4]);
         }
+
+       static void suruseg(string sor, List<Orszag> adatok) {
+
+            Console.WriteLine("4.Feladat");
+         
+
+            for (int i = 0; i < adatok.Count; i++)
+            {
+                if (adatok[i].orszag == "Kína")
+                {
+                    Console.WriteLine("Kína népsűrűssége: {0} fő/km^2", int.Parse(adatok[i].nepesseg) / adatok[i].terulet);
+                                    }
+            }
+            return;
+
+        }
     }
 }
