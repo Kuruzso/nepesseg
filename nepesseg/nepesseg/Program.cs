@@ -44,6 +44,9 @@ namespace nepesseg
                     
                 }
             }
+            //3.Feladat
+            Console.WriteLine("3.Feladat");
+            Console.WriteLine("A beolvasott országok száma: "+adatok.Count());
             
 
             Console.ReadLine();
