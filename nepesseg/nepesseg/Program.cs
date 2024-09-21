@@ -76,6 +76,24 @@ namespace nepesseg
             }
             Console.WriteLine("Kínában a lakosság {0} fővel volt több",int.Parse(adatok[kindex].nepesseg) - int.Parse(adatok[iindex].nepesseg));
             Console.WriteLine();
+            //6.feladat
+            Console.WriteLine("6.Feladat");
+            int harmadikhely = 0;
+            int fake = 0;
+            int hely = 0;
+            for (int i = 0; i < adatok.Count; i++)
+            {
+                fake = int.Parse(adatok[i].nepesseg);
+                if (int.Parse(adatok[kindex].nepesseg) != fake && int.Parse(adatok[iindex].nepesseg) != fake && int.Parse(adatok[i].nepesseg) > harmadikhely)
+                {
+
+                    harmadikhely = int.Parse(adatok[i].nepesseg);
+                    hely = i;
+                }
+            }
+            Console.WriteLine("A harmadik legnépesebb ország: {0}, a lakosság {1} fő.", adatok[hely].orszag, adatok[hely].nepesseg);
+            Console.WriteLine();
+
 
 
             Console.ReadLine();
