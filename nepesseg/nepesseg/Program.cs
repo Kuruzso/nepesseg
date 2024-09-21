@@ -58,6 +58,24 @@ namespace nepesseg
                     Console.WriteLine("Kína népsűrűssége: {0} fő/km^2",int.Parse(adatok[i].nepesseg) / adatok[i].terulet);
                 }
             }
+            Console.WriteLine();
+            //5.feladat
+            Console.WriteLine("5.Feladat");
+            int kindex = 0;
+            int iindex = 0;
+            for (int i = 0; i < adatok.Count; i++)
+            {
+                if (adatok[i].orszag == "Kína")
+                {
+                    kindex = i;
+                }
+                if (adatok[i].orszag == "India")
+                {
+                    iindex = i;
+                }
+            }
+            Console.WriteLine("Kínában a lakosság {0} fővel volt több",int.Parse(adatok[kindex].nepesseg) - int.Parse(adatok[iindex].nepesseg));
+            Console.WriteLine();
 
 
             Console.ReadLine();
