@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace nepesseg
 {
     internal class Program
@@ -96,7 +98,19 @@ namespace nepesseg
             }
             Console.WriteLine("A harmadik legnépesebb ország: {0}, a lakosság {1} fő.", adatok[hely].orszag, adatok[hely].nepesseg);
             Console.WriteLine();
+            //7.feladat
+            Console.WriteLine("7.Feladat");
 
+            Console.WriteLine("Országok, ahol a fővárosban lakók aránya 30% vagy a felett van:");
+            foreach (var orszag in adatok)
+            {
+                if (orszag.FoVarosNepessegFelett30())
+                {
+                    Console.WriteLine("{0}\t({1})", orszag.orszag, orszag.fovaros);
+                }
+            }
+
+            
 
 
             Console.ReadLine();
@@ -104,5 +118,7 @@ namespace nepesseg
         static void suruseg(string sor, List<Orszag> adatok)
         {
         }
+        
+
     }
 }

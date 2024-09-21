@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,7 +25,13 @@ namespace nepesseg
             this.fovaros_nepessege = Convert.ToInt32(darabok[4]);
         }
 
-       static void suruseg(string sor, List<Orszag> adatok) {
+        public bool FoVarosNepessegFelett30()
+        {
+           
+            return fovaros_nepessege*1000 >= int.Parse(nepesseg) * 0.30;
+        }
+
+        static void suruseg(string sor, List<Orszag> adatok) {
 
             Console.WriteLine("4.Feladat");
          
@@ -39,5 +46,7 @@ namespace nepesseg
             return;
 
         }
+
+       
     }
 }
