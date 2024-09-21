@@ -1,0 +1,7 @@
+C:\Users\arpig\Git\nepesseg\nepesseg\bin\Debug\nepesseg.exe.config
+C:\Users\arpig\Git\nepesseg\nepesseg\bin\Debug\nepesseg.exe
+C:\Users\arpig\Git\nepesseg\nepesseg\bin\Debug\nepesseg.pdb
+C:\Users\arpig\Git\nepesseg\nepesseg\obj\Debug\nepesseg.csproj.AssemblyReference.cache
+C:\Users\arpig\Git\nepesseg\nepesseg\obj\Debug\nepesseg.csproj.CoreCompileInputs.cache
+C:\Users\arpig\Git\nepesseg\nepesseg\obj\Debug\nepesseg.exe
+C:\Users\arpig\Git\nepesseg\nepesseg\obj\Debug\nepesseg.pdb
